@@ -31,10 +31,12 @@ class CsvFormater{
 						$answerObject = $answersByUser->getAnswerToQuestion($questionId);
 					
 						$answerString = "";
-						if($question->getType() == "checkbox"){
-							$answerString = CommonTools::arrayToReadableFormat($answerObject->getAnswer());
-						} else {
-							$answerString = $answerObject->getAnswer();
+						if ($answerObject != null) {
+							if($question->getType() == "checkbox"){
+								$answerString = CommonTools::arrayToReadableFormat($answerObject->getAnswer());
+							} else {
+								$answerString = $answerObject->getAnswer();
+							}
 						}
 					
 						$answerString = html_entity_decode($answerString, ENT_QUOTES);
