@@ -92,7 +92,14 @@ class SignupGadgetAnswerFormater{
 		foreach($questions as $question){
 			// Gets answer to questin
 			$answerObject = $answersByUser->getAnswerToQuestion($question->getId());
-			if(is_a($answerObject, "Answer")){
+
+			if ($answerObject == null) {
+				// We get null-values when the signup machine gets more options added after users
+				// have already submitted their answers. So in order not to truly mess up the
+				// nice table we are creating, add an empty table cell.
+				$return .= '<td class="answer"></td>';
+			}
+			else if(is_a($answerObject, "Answer")){
 				$return .= "<td class=\"answer\">".$answerObject->getReadableAnswer()."</td>";
 				$lastAnswer = $answerObject;
 			} else {
