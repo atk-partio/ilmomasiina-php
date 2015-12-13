@@ -15,7 +15,7 @@
 		font-size: 10pt;
 		backgorund-color: White;
 	}
-	
+
 	.form_element_grid td{
 		padding: 0.5em 1.5em;
 	}
@@ -26,33 +26,33 @@
 		font-size: 100%;
 		color: Red;
 	}
-	
+
 	table.answertable{
 	}
-	
+
 	table.answertable th{
 		background-color: #9cb6f2;
 	}
-	
+
 	table.answertable tr.light{
 		background-color: #eff0f2;
 	}
-	
+
 	table.answertable tr.dark{
 		background-color: #d8e0f2;
 	}
-	
+
 	h1#logo{
 		background-image: url("<?php $this->printDirLevel() ?>templates/images/ilmo_logo.png");
 		margin-bottom: 5%;
 		width: 335px;
 		height: 42px;
 	}
-	
+
 	h1#logo span{
-		display: none;	
+		display: none;
 	}
-	
+
 	div#top{
 		width: 100%;
 		text-align: right;
@@ -61,7 +61,7 @@
 		border-bottom-color: #DDDDDD;
 		margin-bottom: 5%;
 	}
-	
+
 	h1#athenelogo{
 		background-image: url("<?php $this->printDirLevel() ?>templates/images/athene.png");
 		background-position: right;
@@ -71,46 +71,46 @@
 		width: 100%;
 		height: 42px;
 	}
-	
+
 	h1#athenelogo span{
-		display: none;	
+		display: none;
 	}
-	
+
 	th{
 		text-align: left;
 	}
-	
+
 	h1{
 		font-size: 110%;
 	}
-	
+
 	input#ilmoittaudu_button{
 		margin: 2% 0%;
 	}
-	
+
 	.auki{
 		color: Green;
 		font-weight: bold;
 	}
-	
+
 	.eivielaauki{
 		font-weight: bold;
 	}
-	
+
 	.sulkeutunut{
 		color: Red;
 		font-weight: bold;
 	}
-	
+
 	table#gridlayout{
 		width: 100%;
 	}
-	
+
 	td#center{
 		width: 80%;
 		padding: 0% 3% 3% 3%;
 	}
-	
+
 	td#leftshadow, td#rightshadow{
 		width: 10%;
 		background-repeat: repeat-y;
@@ -121,17 +121,17 @@
 		background-repeat: repeat-y;
 		background-position: right;
 	}
-	
+
 	td#rightshadow{
 		background-image: url("<?php print $this->printDirLevel() ?>templates/images/bg_right.png");
 		background-repeat: repeat-y;
 		background-position: left;
 	}
-	
+
 	td#center{
 		width: 80%;
 	}
-	
+
 	div#container{
 		padding: 10px 50px 0px 20px;
 		margin-bottom: 2%;
@@ -141,32 +141,32 @@
 		background-repeat: repeat-y;
 		background-position: right;
 	}
-	
+
 	h2#ilmoittautuneet{
 		margin-top: 5%;
 	}
-	
+
 	form#kysymykset{
 		margin-top: 5%;
 	}
-	
+
 	span.kysymys{
 		font-weight: bold;
 	}
-	
+
 	input.text{
 		width: 50%;
 	}
-	
+
 	textarea{
 		width: 50%;
 		height: 10em;
 	}
-	
+
 	#vahvista{
 		margin-top: 3%;
 	}
-	
+
 	div.debug{
 		border-color: Black;
 		border-style: dashed;
@@ -175,18 +175,18 @@
 		color: Red;
 		padding: 1%;
 	}
-	
-	
-	</style>
 
+
+	</style>
+	<link href="<?php $this->printDirLevel() ?>templates/responsive_magic.css" rel="stylesheet" type="text/css" />
 	<?php $this->printHeader(); ?>
-  
-	
+
+
 </head>
 
 <body>
 
-<!-- Asemoidaan taulukoilla kjäh kjäh -->
+<!-- Asemoidaan taulukoilla kjï¿½h kjï¿½h -->
 <table id="gridlayout">
 <tr>
 <td id="leftshadow"></td>
@@ -206,7 +206,7 @@
 </div>
 
 <br><br><br><br>
-<p>Epäonnistumisen sattuessa ota yhteyttä killan tiedottajaan, tiedottaja ätt athene.fi</p>
+<p>Epï¿½onnistumisen sattuessa ota yhteyttï¿½ killan tiedottajaan, tiedottaja ï¿½tt athene.fi</p>
 
 </td>
 <td id="rightshadow"></td>

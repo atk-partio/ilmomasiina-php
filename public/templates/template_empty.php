@@ -5,7 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-15" />
 <title><?php /* Page title */ $this->printTitle(); ?></title>
+
 <link href="<?php $this->printDirLevel() ?>templates/template_default.css" rel="stylesheet" type="text/css" />
+<link href="<?php $this->printDirLevel() ?>templates/responsive_magic.css" rel="stylesheet" type="text/css" />
 <?php /* Custom header for page */ $this->printHeader(); ?>
 </head>
 
@@ -25,7 +27,7 @@
 <?php /* Prints page content */ $this->printContent(); ?>
     </div>
     <div id="contact">
-      <p id="admin-email"><span>Epäonnistumisen sattuessa ota yhteys osoitteeseen <?php /* Prints address to where user should contant in case of signup failure */ $this->printAdminEmail(); ?></span></p>
+      <p id="admin-email"><span>Epï¿œonnistumisen sattuessa ota yhteys osoitteeseen <?php /* Prints address to where user should contant in case of signup failure */ $this->printAdminEmail(); ?></span></p>
     </div>
     <div id="debug">
 <?php /* Prints debugging messages if debug mode is on */ $this->printDebug(); ?>
