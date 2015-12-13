@@ -4,6 +4,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-15" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <title><?php /* Page title */ $this->printTitle(); ?></title>
 
 <link href="<?php $this->printDirLevel() ?>templates/template_default.css" rel="stylesheet" type="text/css" />
