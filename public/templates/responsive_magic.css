@@ -1,6 +1,11 @@
 /* you can implements responsive magic here */
 
 @media only screen
-and (max-width : 800px) {
+and (max-width : 600px) {
 
+  h1#ilmomasiina-title span{
+    font-size: 28pt;
+  }
+
+  
 }

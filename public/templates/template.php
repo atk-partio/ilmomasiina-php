@@ -1,8 +1,10 @@
+﻿<!-- THIS FILE SEEMS TO BE UNUSED: can remove (13.12.2015) -->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-15" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<title><?php $this->printTitle(); ?></title>
 	<style type="text/css">
 	body, html{
@@ -206,7 +208,7 @@
 </div>
 
 <br><br><br><br>
-<p>Ep�onnistumisen sattuessa ota yhteytt� killan tiedottajaan, tiedottaja �tt athene.fi</p>
+<p>Epäonnistumisen sattuessa ota yhteyttä killan tiedottajaan, tiedottaja ätt athene.fi</p>
 
 </td>
 <td id="rightshadow"></td>

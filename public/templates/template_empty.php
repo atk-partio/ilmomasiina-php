@@ -16,7 +16,7 @@
   <div id="before-container-div"></div>
   <div id="container">
     <div id="header">
-      <h1 id="ilmomasiina-title"><span>Ilmomasiina 2.0</span></h1>
+      <h1 id="ilmomasiina-title"><span>Ilmomasiina 2.1</span></h1>
     </div>
     <div id="guild">
       <h2 id="athene-guild"><span>Informaatioverkostojen kilta Athene</span></h2>
@@ -28,7 +28,7 @@
 <?php /* Prints page content */ $this->printContent(); ?>
     </div>
     <div id="contact">
-      <p id="admin-email"><span>Epï¿½onnistumisen sattuessa ota yhteys osoitteeseen <?php /* Prints address to where user should contant in case of signup failure */ $this->printAdminEmail(); ?></span></p>
+      <p id="admin-email"><span>Epäonnistumisen sattuessa ota yhteys osoitteeseen <?php /* Prints address to where user should contant in case of signup failure */ $this->printAdminEmail(); ?></span></p>
     </div>
     <div id="debug">
 <?php /* Prints debugging messages if debug mode is on */ $this->printDebug(); ?>
