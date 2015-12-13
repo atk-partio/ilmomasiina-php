@@ -1,33 +1,33 @@
 <?php
 
 /**
- * Tässä tiedostossa hoidetaan tietokantayhteydenmuodostaminen, sekä 
- * tietokantakyselyt. Aiemmin (tml:n aikaan eli ennen 2007) Athenen sivut 
- * pohjautuivat pääosin PostgreSQL tietokantaan. Tämä DBInterface tiedosto 
+ * Tï¿½ssï¿½ tiedostossa hoidetaan tietokantayhteydenmuodostaminen, sekï¿½
+ * tietokantakyselyt. Aiemmin (tml:n aikaan eli ennen 2007) Athenen sivut
+ * pohjautuivat pï¿½ï¿½osin PostgreSQL tietokantaan. Tï¿½mï¿½ DBInterface tiedosto
  * sai siis alkunsa kun sivuja siirrettiin otaxille, jossa ei ollut kuin
  * MySQL kanta.
  *
  * Tietokantajutut on toteutettu Pear-paketin MDB2 paketilla. Kannattaa
- * jatkossakin käyttää Pear-paketteja jos niistä vain jotain hyötyä on 
- * sillä se säästää pyörän uudelleen keksimistä
+ * jatkossakin kï¿½yttï¿½ï¿½ Pear-paketteja jos niistï¿½ vain jotain hyï¿½tyï¿½ on
+ * sillï¿½ se sï¿½ï¿½stï¿½ï¿½ pyï¿½rï¿½n uudelleen keksimistï¿½
  *
- * MDB2 dokumentaatio: 
- * http://pear.php.net/manual/en/package.database.mdb2.php 
+ * MDB2 dokumentaatio:
+ * http://pear.php.net/manual/en/package.database.mdb2.php
  *
  * created: 28.10.2007
  * author: Mikko Koski (mikko.koski@tkk.fi)
  */
 
 define("DBTYPE", "mysql");    // Tietokannan tyyppi (esim mysql, pgsql)
-define("USERNAME", "root");       // Kannan käyttäjänimi
+define("USERNAME", "root");       // Kannan kï¿½yttï¿½jï¿½nimi
 define("PASSWORD", "root");       // Salasana
 define("HOST", "localhost");  // Osoite tietokannan hostiin
-define("DATABASE", "ilmomasiina");       // Tietokannan nimi
+define("DATABASE", "scotchbox");       // Tietokannan nimi
 
 define("DEBUG", "1");
 
-// ----- ÄLÄ MUOKKAA TÄSTÄ ETEENPÄIN JOSSET TIEDÄ MITÄ TEET ------ ////////////
- 
+// ----- ï¿½Lï¿½ MUOKKAA Tï¿½STï¿½ ETEENPï¿½IN JOSSET TIEDï¿½ MITï¿½ TEET ------ ////////////
+
 
 // Haetaan tarvittava PEAR-paketti
 require_once 'AllowPEARInclude.php';
@@ -46,10 +46,10 @@ $options = array(
 	 'log_line_break' => "\n\t"
 );
 
-$conn =& MDB2::factory($dsn, $options);
+$conn = MDB2::factory($dsn, $options);
 
-if (PEAR::isError($conn)) {
-    // FIXME Vaihda tähän jotain muuta
+if ((new PEAR)->isError($conn)) {
+    // FIXME Vaihda tï¿½hï¿½n jotain muuta
     die($conn->getMessage());
 }
 

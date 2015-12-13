@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+@ini_set('display_errors', 0);
 
 /* Requirements */
 require_once("classes/ErrorReportEnabler.php");
@@ -148,7 +150,7 @@ if ($request->isError()) {
                     if ($gadget->isOpen()) {
                         $page->addContent("<td class=\"open-close-state\"><span class=\"signup-open\">Auki</span></td>");
                     } else if ($gadget->willBeOpened()) {
-                        $page->addContent("<td class=\"open-close-state\"><span class=\"signup-not-yet-open\">Ei vielä avautunut</td>\n");
+                        $page->addContent("<td class=\"open-close-state\"><span class=\"signup-not-yet-open\">Ei vielï¿½ avautunut</td>\n");
                     } else {
                         $page->addContent("<td class=\"open-close-state\"><span class=\"signup-closed\">Sulkeutunut</td>\n");
                     }
@@ -164,4 +166,3 @@ if ($request->isError()) {
         }
     }
 }
-
